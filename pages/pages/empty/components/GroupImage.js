@@ -16,16 +16,16 @@ function GroupImage(props) {
       </div>
 
       {/* <div className='flex flex-wrap justify-content-between gap-2'> */}
-      {/* <div className='grid'>
+      <div className='grid'>
         {props.images.map((image, index) => {
           return(
             <div key={index} className='flex flex-column justify-content-center align-items-center'>
               <LazyLoadImage src={!image["link-img"] ? image["link_img"]: image["link-img"]} alt="Image"  width='120' className='col' style={styled}/>
-              <div>{image.location}</div>
+              {/* <div>{image.location}</div> */}
             </div>
           )
         })}
-      </div> */}
+      </div>
     </div>
   )
 }
